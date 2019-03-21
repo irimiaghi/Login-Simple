@@ -1,6 +1,4 @@
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class MySqlHandler {
     private Connection dbConnection;
@@ -33,14 +31,6 @@ public class MySqlHandler {
             else{
                 System.out.println("Wrong username/password");
             }
-//            List usernames = new ArrayList<String>();
-//            while(resultSet.next()) {
-//                System.out.println("Te-ai logat!");
-//                usernames.add(resultSet.getString(1));
-//            }
-//            if(usernames.isEmpty()) {
-//                System.out.println("nope");
-//            }
         } catch (SQLException e) {
             e.printStackTrace();
         }

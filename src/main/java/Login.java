@@ -1,11 +1,10 @@
 import java.sql.SQLException;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class DemoLogin implements LoginCapable {
+public class Login implements LoginCapable {
     private MySqlHandler sqlHandler;
 
-    public DemoLogin() throws SQLException {
+    public Login() throws SQLException {
         sqlHandler = new MySqlHandler();
     }
 
